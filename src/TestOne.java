@@ -16,7 +16,7 @@ public class TestOne {
   {
 	  String str = "C:/project/drivers/chromedriver.exe";
 	  System.setProperty("webdriver.chrome.driver", str); //same as server
-		 
+		   //welcom
 	  driver = new ChromeDriver();  
 		 
 		 driver.manage().window().maximize();
