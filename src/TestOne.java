@@ -14,8 +14,11 @@ public class TestOne {
   @BeforeClass
   public void beforeClass() throws InterruptedException 
   {
-	  System.setProperty("webdriver.chrome.driver", "C:/Users/rs/Downloads/Compressed/chromedriver.exe"); //same as server
-		 driver = new ChromeDriver();  
+	  String str = "C:/project/drivers/chromedriver.exe";
+	  System.setProperty("webdriver.chrome.driver", str); //same as server
+		 
+	  driver = new ChromeDriver();  
+		 
 		 driver.manage().window().maximize();
 		 driver.get("https://maxincomesystem.com/registration");
 			//Thread.sleep(8000);
